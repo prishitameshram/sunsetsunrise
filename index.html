@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sunset Sunrise Dashboard</title>
+     <!-- Use the correct jQuery CDN link -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sunset Sunrise Dashboard</h1>
+        <div class="location-container">
+            <button id="getLocationBtn">Get Location</button>
+            <div class="search-container">
+                <input type="text" id="locationInput" placeholder="Enter Location">
+                <img src="Search.jpg" alt="Search Icon" id="searchIcon">
+            </div>
+        </div>
+        <div id="resultContainer" style="display: none;">
+            <table class="results-table">
+                <tr>
+                    <td class="results-column" id="todayColumn">
+                        <h3>Today</h3>
+                        <div id="todayResults"></div>
+                    </td>
+                    <td class="results-column" id="tomorrowColumn">
+                        <h3>Tomorrow</h3>
+                        <div id="tomorrowResults"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

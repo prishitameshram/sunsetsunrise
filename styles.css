@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    background-color: white;
+}
+
+/* Adjust body font size for smaller screens */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust container padding for smaller screens */
+h1 {
+    color: #fff;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    font-size: 76px;
+}
+
+/* Adjust h1 font size for smaller screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 56px;
+        background-position: center;
+        position: center;
+    }
+}
+/* Adjust h1 padding for smaller screens */
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#getLocationBtn {
+    background-color: #fafafa;
+    color: rgb(14, 13, 13);
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#locationInput {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#searchIcon {
+    cursor: pointer;
+    padding: 10px 5px; /* Adjust padding for the search icon */
+    border-radius: 4px;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4c7c7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Adjust table font size for smaller screens */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-column { /* Adjust results column width for smaller screens */
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    border: 5px solid #eeeded;
+    background-color: #fae1e1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+#resultContainer h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#resultContainer p {
+    color: #555;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .location-container {
+        flex-direction: row;
+    }
+
+    .search-container {
+        flex-direction: row;
+        align-items: center; /* Align items back to center for larger screens */
+    }
+
+    .results-column {
+        width: 50%;
+    }
+}
